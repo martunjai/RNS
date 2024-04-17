@@ -1,0 +1,12 @@
+{
+  "name": "GestureHandlerTest",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react-native-gesture-handler": "https://github.com/nagra-opentv/react-native-gesture-handler/archive/refs/tags/v1.10.3_rsk.tar.gz"
+  },
+  "devDependencies": {
+  },
+  "jest": {
+  }
+}

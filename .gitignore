@@ -1,0 +1,34 @@
+# DEPS
+/react-native/
+/folly/
+/third_party/skia/
+/third_party/rapidjson/
+/third_party/boost/
+/third_party/glog/
+/third_party/double-conversion/
+/third_party/boringssl/src/
+/third_party/angle/
+/third_party/freetype/src/
+/third_party/harfbuzz/src/
+/third_party/icu/
+/third_party/libjpeg-turbo/
+/third_party/libpng/
+/third_party/libwebp/
+/third_party/nasm/
+/third_party/wuffs/
+/third_party/zlib/
+/third_party/swiftshader/
+/third_party/depot_tools/
+/third_party/libcurl/
+
+# Build output
+/out*/
+
+# Python generated files
+*.pyc
+
+!/build/
+/build/config/gclient_args.gni
+
+# JavaScript files
+/node_modules/

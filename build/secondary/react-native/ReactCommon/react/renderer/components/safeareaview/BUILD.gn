@@ -1,0 +1,26 @@
+import("//react-native/common.gni")
+
+rn_cxx_component("safeareaview") {
+  include_dirs = [
+    "//ReactSkia/xplat/js/react-native-github",
+  ]
+
+  sources = [
+    "SafeAreaViewShadowNode.cpp",
+    "SafeAreaViewState.cpp",
+  ]
+
+  defines = [
+    "LOG_TAG=ReactNative",
+  ]
+
+  deps = [
+    "//folly",
+    "//react-native/ReactCommon/react/renderer/core:core",
+    "//react-native/ReactCommon/yoga:yoga",
+    "//ReactSkia/xplat/js/react-native-github:generated_components-rncore",
+  ]
+
+  with_exceptions = true
+  with_rtti = true
+}

@@ -1,0 +1,19 @@
+group("headers_only") {
+  public_configs = [ ":boost-config" ]
+}
+
+config("boost-config") {
+  include_dirs = [
+    ".",
+  ]
+
+  cflags_cc = [
+    "-Wno-extra-semi",
+  ]
+
+  if(is_clang) {
+    cflags = [ "-fno-complete-member-pointers" ]
+  } else {
+    cflags_cc += [ "-Wno-parentheses" ]
+  }
+}
